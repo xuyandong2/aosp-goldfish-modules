@@ -1,0 +1,2 @@
+BUILD_INITRAMFS=1
+EXT_MODULES="goldfish-modules"
