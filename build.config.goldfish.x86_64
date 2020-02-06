@@ -1,2 +1,7 @@
 . ${ROOT_DIR}/common/build.config.gki.x86_64
 . ${ROOT_DIR}/goldfish-modules/build.config.goldfish
+
+DEFCONFIG=goldfish_86_64_defconfig
+DEFCONFIG_PATH="${ROOT_DIR}/common/arch/x86/configs"
+PRE_DEFCONFIG_CMDS="cat ${DEFCONFIG_PATH}/gki_defconfig ${FRAGMENT_DEFCONFIG_PATH} > ${DEFCONFIG_PATH}/${DEFCONFIG};"
+POST_DEFCONFIG_CMDS="rm ${DEFCONFIG_PATH}/${DEFCONFIG}"

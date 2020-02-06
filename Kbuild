@@ -4,5 +4,4 @@ obj-m += goldfish_pipe.o
 obj-m += goldfish_sync.o
 obj-m += goldfish_address_space.o
 obj-m += goldfish_battery.o
-obj-m += goldfish_cpufreq_stats.o
 obj-m += goldfish_rotary.o
