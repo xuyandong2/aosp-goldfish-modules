@@ -1,2 +1,3 @@
 EXT_MODULES="goldfish-modules"
 FRAGMENT_DEFCONFIG_PATH="${ROOT_DIR}/goldfish-modules/goldfish_defconfig.fragment"
+TRIM_NONLISTED_KMI=""
