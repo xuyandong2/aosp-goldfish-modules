@@ -1030,8 +1030,8 @@ static long goldfish_dma_ioctl_getoff(struct goldfish_pipe *pipe,
 	struct goldfish_dma_ioctl_info ioctl_data;
 	struct goldfish_dma_context *dma;
 
-	BUILD_BUG_ON(FIELD_SIZEOF(struct goldfish_dma_ioctl_info, phys_begin) <
-		FIELD_SIZEOF(struct goldfish_dma_context, phys_begin));
+	BUILD_BUG_ON(sizeof_field(struct goldfish_dma_ioctl_info, phys_begin) <
+		sizeof_field(struct goldfish_dma_context, phys_begin));
 
 	if (mutex_lock_interruptible(&pipe->lock)) {
 		dev_err(pdev_dev, "DMA_GETOFF: the pipe is not locked\n");
