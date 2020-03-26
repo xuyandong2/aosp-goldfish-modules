@@ -1,5 +1,5 @@
-. ${ROOT_DIR}/common/build.config.gki.aarch64
 . ${ROOT_DIR}/goldfish-modules/build.config.goldfish
+. ${ROOT_DIR}/common/build.config.aarch64
 
 DEFCONFIG=goldfish_aarch64_defconfig
 DEFCONFIG_PATH="${ROOT_DIR}/common/arch/arm64/configs"
