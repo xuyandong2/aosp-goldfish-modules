@@ -11,6 +11,8 @@
  * Each time the interrupt trips, the driver may perform a sync operation.
  */
 
+#include "defconfig_test.h"
+
 #include <linux/acpi.h>
 #include <linux/dma-fence.h>
 #include <linux/fdtable.h>
