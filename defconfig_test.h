@@ -1,5 +1,13 @@
 /* Put all options we expect gki_defconfig to provide us here */
 
+#ifndef CONFIG_BRIDGE
+#error CONFIG_BRIDGE is required
+#endif
+
+#ifndef CONFIG_VETH
+#error CONFIG_VETH is required
+#endif
+
 #ifndef CONFIG_CFG80211
 #error CONFIG_CFG80211 is required
 #endif
