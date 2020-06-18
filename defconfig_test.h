@@ -31,3 +31,7 @@
 #ifndef CONFIG_COMPAT
 #error CONFIG_COMPAT is required
 #endif
+
+#ifndef CONFIG_USB_DUMMY_HCD
+#error CONFIG_USB_DUMMY_HCD is required
+#endif
