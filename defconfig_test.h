@@ -20,14 +20,14 @@
 #error CONFIG_PCI is required
 #endif
 
-#ifndef CONFIG_ZRAM
-#error CONFIG_ZRAM is required
-#endif
-
 #ifndef CONFIG_ZSMALLOC
 #error CONFIG_ZSMALLOC is required
 #endif
 
 #ifndef CONFIG_COMPAT
 #error CONFIG_COMPAT is required
+#endif
+
+#ifdef CONFIG_ZRAM
+#error CONFIG_ZRAM is a module in goldfish_defconfig.fragment
 #endif
